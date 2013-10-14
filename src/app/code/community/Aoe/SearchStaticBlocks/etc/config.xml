@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Aoe_SearchStaticBlocks>
+            <version>1.1.0</version>
+        </Aoe_SearchStaticBlocks>
+    </modules>
+    <global>
+        <blocks>
+            <aoe_searchstaticblocks>
+                <class>Aoe_SearchStaticBlocks_Block</class>
+            </aoe_searchstaticblocks>
+            <adminhtml>
+                <rewrite>
+                    <catalog_search_edit_form>Aoe_SearchStaticBlocks_Block_Catalog_Search_Edit_Form</catalog_search_edit_form>
+                    <catalog_search_grid>Aoe_SearchStaticBlocks_Block_Catalog_Search_Grid</catalog_search_grid>
+                </rewrite>
+            </adminhtml>
+            <catalogsearch>
+                <rewrite>
+                    <result>Aoe_SearchStaticBlocks_Block_CatalogSearch_Result</result>
+                </rewrite>
+            </catalogsearch>
+        </blocks>
+        <resources>
+            <searchstaticblocks>
+                <setup>
+                    <module>Aoe_SearchStaticBlocks</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </searchstaticblocks>
+        </resources>
+    </global>
+</config>

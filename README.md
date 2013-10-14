@@ -1,4 +1,4 @@
 Aoe_SearchStaticBlocks
 ======================
 
-Adds static blocks to the default Magento search result page, base on keywords.
+Allows you to relate search query with static blocks. They can be displayed above the search results.
