@@ -52,7 +52,9 @@ class Aoe_SearchStaticBlocks_Block_Catalog_Search_Edit_Form extends Mage_Adminht
             'title'  => Mage::helper('catalog')->__('Static blocks'),
             'note'  => Mage::helper('catalog')->__('comma separated list of static blocks identifiers'),
         ));
-
+        $model = Mage::registry('current_catalog_search');
+        /* @var $model Mage_CatalogSearch_Model_Query */
+        $form->setValues($model->getData());
         return $this;
     }
 }
